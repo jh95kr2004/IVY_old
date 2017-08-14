@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+
+  <title>IVY: Consult</title>
+
+  <!-- ### Libraries ###
+  - jQuery 3.2.1
+  - Bootstrap 4.0.0-alpha.6 -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Javascript and CSS for this site -->
+  <script src="doc.js"></script>
+  <script src="js/consult.js"></script>
+  <link rel="stylesheet" href="doc.css">
+  <link rel="stylesheet" href="css/consult.css">
+</head>
+<body class='open-sans'>
+  <nav class="navbar navbar-toggleable-md navbar-light">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">IVY</a>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="#">EXPLORE</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">CONSULT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">MANAGE</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id='mainContainer' class='container'>
+    <div class="row justify-content-start">
+      <div id='leftMenu' class="col-5">
+        <div class='h3'>Portfolio Input</div>
+        <div>Enter tour portfolio so we can analyze it.</div>
+        <div class="list-group">
+          <div id='curricularButton' class="list-group-item list-group-item-action flex-column align-items-start active">
+            <div class="d-flex w-100 justify-content-between">Curricular</div>
+          </div>
+          <div id='extra-curricularButton' class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">Extra-Curricular</div>
+          </div>
+          <div id='backgroundButton' class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">Background</div>
+          </div>
+        </div>
+      </div>
+      <!-- input for curricular -->
+      <div id='curricularInput' class="col-7 col-lg-5 row form-group input-div">
+        <div class="col-12 col-lg-6">
+          <label for="SV">SAT Verbal</label>
+          <input type="number" class="form-control" id="SV" placeholder="200-800" min=200 max=800 required>
+        </div>
+        <div class="col-12 col-lg-6">
+          <label for="SW">SAT Writing</label>
+          <input type="number" class="form-control" id="SW" placeholder="200-800" min=200 max=800 required>
+        </div>
+        <div class="col-12 col-lg-6">
+          <label for="SM">SAT Math</label>
+          <input type="number" class="form-control" id="SM" placeholder="200-800" min=200 max=800 required>
+        </div>
+        <div class="col-12 col-lg-6">
+          <label for="GPA">GPA</label>
+          <input type="number" class="form-control" id="GPA" placeholder="0.00-4.00" min=0.0 max=4.0 step=0.01 required>
+        </div>
+        <div class="col-12">
+          <label for="HS">High School</label>
+          <input type="text" class="form-control" id="HS" placeholder="Name of High school" required>
+        </div>
+      </div>
+      <!-- input for extra-curricular -->
+      <div id='extra-curricularInput' class="col-7 row form-group input-div" style="display: none">
+        <div class="col-12 col-lg-6">
+          <label for="SM">Self Motivation</label>
+          <div id="SM" class="btn-group form-control" role="group">
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button">4</button>
+            <button type="button">5</button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <label for="PS">Perserverence</label>
+          <div id="PS" class="btn-group form-control" role="group">
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button">4</button>
+            <button type="button">5</button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <label for="CF">Confidence</label>
+          <div id="CF" class="btn-group form-control" role="group">
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button">4</button>
+            <button type="button">5</button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <label for="LS">leadership</label>
+          <div id="LS" class="btn-group form-control" role="group">
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button">4</button>
+            <button type="button">5</button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <label for="CM">communication</label>
+          <div id="CM" class="btn-group form-control" role="group">
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button">4</button>
+            <button type="button">5</button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <label for="IC">Intelletual Capacity</label>
+          <div id="IC" class="btn-group form-control" role="group" >
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button">4</button>
+            <button type="button">5</button>
+          </div>
+        </div>
+      </div>
+      <!-- input for background -->
+      <div id='backgroundInput' class="col-7 row form-group input-div" style="display: none">
+        <div class="col-12 col-lg-6">
+          <label for="HI">Household Income</label>
+          <input type="number" class="form-control" id="HI" required>
+        </div>
+        <div class="col-12">
+          <label for="SB">Siblings</label>
+          <div id="SB" class="btn-group form-control" role="group">
+            <button type="button">0</button>
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3+</button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <label for="PR">Parents</label>
+          <div id="PR" class="btn-group form-control" role="group">
+            <button type="button" class="btn-toggle">FATHER</button>
+            <button type="button" class="btn-toggle">MOTHER</button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <label for="VT">Veterans</label>
+          <div id="VT" class="btn-group form-control" role="group">
+            <button type="button">YES</button>
+            <button type="button">NO</button>
+          </div>
+        </div>
+        <div class="col-12">
+          <label for="PE">Parents' Education</label>
+          <div id="PE" class="btn-group form-control" role="group">
+            <button type="button">PRIMARY</button>
+            <button type="button">HIGH</button>
+            <button type="button">UNIVERSITY</button>
+          </div>
+        </div>
+        <div class="col-12">
+          <label for="RC">Race</label>
+          <div id="RC" class="btn-group form-control" role="group">
+            <button type="button">WHITE</button>
+            <button type="button">BLACK</button>
+            <button type="button">HISPANIC</button>
+            <button type="button">ASIAN</button>
+            <button type="button">OTHER</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

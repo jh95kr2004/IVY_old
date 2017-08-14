@@ -1,0 +1,84 @@
+body {
+	background: url(../img/main-overlay.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: #FFF;
+}
+
+nav a.nav-link {
+	padding: 2rem;
+	color: #FFF;
+}
+
+#mainTitle {
+	margin-bottom: 2rem;
+	font-size: 4.5rem;
+	line-height: 1.1;
+}
+
+#mainContainer {
+	padding: 0;
+}
+
+#mainContainer div.center-elem p {
+	/*text-align: left;*/
+	font-weight: 300;
+}
+
+#main-buttons {
+	margin-top: 5rem;
+}
+
+#main-buttons a {
+	background: transparent;
+	border-color: #8C9EFF;
+	border-width: 2px;
+	color: #8C9EFF;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+#main-buttons a:hover {
+	background-color: #8C9EFF;
+	color: #FFF;
+}
+
+#copyright {
+	position: absolute;
+	bottom: 1rem;
+	width: 100%;
+	text-align: center;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-size: 0.5rem;
+	font-weight: 300;
+}
+
+#smallSizeMenu {
+	display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	nav a.nav-link {
+		padding: 1rem;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	nav a.nav-link {
+		padding: 1rem;
+	}
+
+	nav#largeSizeMenu a.nav-link {
+		display: none;
+	}
+
+	#smallSizeMenu {
+		position: relative;
+		display: inherit;
+	}
+}

@@ -1,0 +1,69 @@
+body > div, body > div > * {
+  height: 100%;
+}
+
+#exploreMenu {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/menu-explore.jpg');
+}
+
+#exploreMenu:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/menu-explore.jpg');
+}
+
+#consultMenu {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/menu-consult.jpg');
+}
+
+#consultMenu:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/menu-consult.jpg');
+}
+
+#manageMenu {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/menu-manage.jpg');
+}
+
+#manageMenu:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/menu-manage.jpg');
+}
+
+.menuImage {
+  -webkit-background-size: auto 100%;
+	-moz-background-size: auto 100%;
+	-o-background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+	background-size: auto 100%;
+	color: #FFF;
+  cursor: pointer;
+}
+
+.menuImage:hover {
+  color: #FFF;
+}
+
+.menuImage > div {
+  position: absolute;
+	top: 50%;
+  left: 10%;
+	margin: 0 auto;
+	transform: translate(0, -50%);
+}
+
+.menuTitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-bottom: 2rem;
+}
+
+.menuDescription {
+  font-weight: 300;
+}
+
+@media screen and (max-width: 575px) {
+	.menuImage {
+    -webkit-background-size: 100% auto;
+  	-moz-background-size: 100% auto;
+  	-o-background-size: 100% auto;
+  	background-size: 100% auto;
+  }
+}

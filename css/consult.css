@@ -1,0 +1,156 @@
+nav {
+  border-bottom: 1px solid #C0C0C0;
+  padding: 2rem !important;
+}
+
+nav .navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav li.active a.nav-link {
+  color: #651FFF !important;
+}
+
+nav a.nav-link {
+  color: #000 !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+nav a.nav-link:hover {
+  color: #651FFF !important;
+}
+
+#mainContainer {
+  padding-top: 7rem;
+}
+
+#mainContainer #leftMenu > div:first-child {
+  padding-right: 4rem;
+}
+
+#mainContainer #leftMenu .h3 {
+  padding-bottom: 1rem;
+}
+
+#mainContainer #leftMenu .list-group-item.active {
+  background-color: transparent;
+  color: #651FFF;
+}
+
+#mainContainer #leftMenu .list-group-item:hover {
+  background-color: #f7f7f9;
+  cursor: pointer;
+}
+
+#mainContainer #leftMenu .list-group {
+  margin-top: 2rem;
+}
+
+#mainContainer #leftMenu .list-group-item {
+  border-radius: 0;
+  border: 1px solid black !important;
+  border-left: none !important;
+  border-right: none !important;
+  padding: 1rem;
+  padding-left: 0.5rem;
+}
+
+#mainContainer .input-div > div {
+  padding-bottom: 1.5rem;
+  /*padding-right: 3rem;*/
+}
+
+#mainContainer .input-div input {
+  font-size: 2rem;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid #808080;
+}
+
+#mainContainer .input-div input:valid {
+  border-bottom: 3px solid black;
+}
+
+#mainContainer .input-div input::-webkit-input-placeholder {
+  color: #F0F0F0;
+}
+
+#mainContainer .input-div input:focus::-webkit-input-placeholder {
+  color: rgba(101, 31, 255, 0.1);
+}
+
+#mainContainer .input-div input:-moz-placeholder {
+    color: #F0F0F0;
+}
+
+#mainContainer .input-div input:-moz-placeholder {
+    color: rgba(101, 31, 255, 0.1);
+}
+
+#mainContainer .input-div input::-moz-placeholder {
+    color: #F0F0F0;
+}
+
+#mainContainer .input-div input::-moz-placeholder {
+    color: rgba(101, 31, 255, 0.1);
+}
+
+#mainContainer .input-div input:-ms-input-placeholder {
+    color: #F0F0F0;
+}
+
+#mainContainer .input-div input:-ms-input-placeholder {
+    color: rgba(101, 31, 255, 0.1);
+}
+
+#mainContainer .input-div input:focus {
+  color: #651FFF;
+  border-color: #651FFF;
+}
+
+.btn-group button {
+  background-color: transparent;
+  border: none !important;
+  outline: 0 !important;
+  border-radius: 0;
+  font-size: 2rem;
+  padding: .5rem 1rem;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-group button:first-child {
+  padding-left: 0;
+}
+
+.btn-group button:hover {
+  background-color: transparent;
+  color: rgba(101, 31, 255, 0.5);
+}
+
+.btn-group button:focus {
+  border: none !important;
+  outline: 0 !important;
+}
+
+.btn-group button.active {
+  color: #651FFF;
+  background-color: transparent;
+}
+
+.form-control {
+  padding: 0;
+  border: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .form-control {
+    overflow-x: scroll;
+  }
+
+  .form-control * {
+    overflow-x: visible;
+  }
+}
