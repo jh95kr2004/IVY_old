@@ -28,12 +28,12 @@ body > div, body > div > * {
 
 .menuImage {
   -webkit-background-size: auto 100%;
-	-moz-background-size: auto 100%;
-	-o-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center;
-	background-size: auto 100%;
-	color: #FFF;
+  background-size: auto 100%;
+  color: #FFF;
   cursor: pointer;
 }
 
@@ -41,12 +41,20 @@ body > div, body > div > * {
   color: #FFF;
 }
 
+.menuImage:visited {
+  color: #FFF;
+}
+
+.menuImage:active {
+  color: #FFF;
+}
+
 .menuImage > div {
   position: absolute;
-	top: 50%;
+  top: 50%;
   left: 10%;
-	margin: 0 auto;
-	transform: translate(0, -50%);
+  margin: 0 auto;
+  transform: translate(0, -50%);
 }
 
 .menuTitle {
@@ -60,10 +68,10 @@ body > div, body > div > * {
 }
 
 @media screen and (max-width: 575px) {
-	.menuImage {
+  .menuImage {
     -webkit-background-size: 100% auto;
-  	-moz-background-size: 100% auto;
-  	-o-background-size: 100% auto;
-  	background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
   }
 }

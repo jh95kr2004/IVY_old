@@ -8,23 +8,31 @@ body {
 }
 
 nav a.nav-link {
-	padding: 2rem;
+	margin: 3rem 4rem 3rem 0rem;
+	padding: 0;
 	color: #FFF;
-}
-
-#mainTitle {
-	margin-bottom: 2rem;
-	font-size: 4.5rem;
-	line-height: 1.1;
 }
 
 #mainContainer {
 	padding: 0;
 }
 
-#mainContainer div.center-elem p {
-	/*text-align: left;*/
+#mainContainer div.center-elem * {
 	font-weight: 300;
+}
+
+#mainContainer div.center-elem h1 {
+	margin-bottom: 5rem;
+	font-size: 3.5rem;
+	line-height: 1.1;
+}
+
+#mainContainer div.center-elem h4 {
+	margin-bottom: 2rem;
+}
+
+#mainContainer div.center-elem p {
+	text-align: justify;
 }
 
 #main-buttons {
