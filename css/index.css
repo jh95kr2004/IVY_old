@@ -39,7 +39,7 @@ nav a.nav-link {
 	margin-top: 5rem;
 }
 
-#main-buttons a {
+a#signInButton {
 	background: transparent;
 	border-color: #8C9EFF;
 	border-width: 2px;
@@ -50,8 +50,21 @@ nav a.nav-link {
 	padding-bottom: 1rem;
 }
 
-#main-buttons a:hover {
+a#signInButton:hover {
 	background-color: #8C9EFF;
+	color: #FFF;
+}
+
+a#learnMoreButton {
+	color: #FFF;
+	margin-top:1.5rem;
+}
+
+a#learnMoreButton:hover {
+	color: #FFF;
+}
+
+a#learnMoreButton:visited {
 	color: #FFF;
 }
 
