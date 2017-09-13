@@ -1,0 +1,23 @@
+div {
+  width: 100%;
+}
+
+div#loginDescription {
+  margin-top: 1rem;
+}
+
+div#loginForm {
+  margin-top: 4rem;
+}
+
+a#continueButton {
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 1199px) {
+  div#mainContainer {
+    padding-top: 2rem;
+  }
+}

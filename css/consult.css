@@ -1,3 +1,7 @@
+:root {
+  --input-color: #CECECE;
+}
+
 nav {
   border-bottom: 1px solid #C0C0C0;
   padding: 2rem !important;
@@ -20,6 +24,10 @@ nav a.nav-link {
 
 nav a.nav-link:hover {
   color: #651FFF !important;
+}
+
+div.row {
+  margin: 0;
 }
 
 #mainContainer {
@@ -59,56 +67,44 @@ nav a.nav-link:hover {
 
 #mainContainer .input-div > div {
   padding-bottom: 1.5rem;
-  /*padding-right: 3rem;*/
+}
+
+#mainContainer .input-div label {
+  color: var(--input-color);
 }
 
 #mainContainer .input-div input {
-  font-size: 2rem;
-  padding: 0;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
   border: none;
   border-radius: 0;
-  border-bottom: 3px solid #808080;
+  border-bottom: 2px solid var(--input-color);
 }
 
 #mainContainer .input-div input:valid {
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid black;
 }
 
 #mainContainer .input-div input::-webkit-input-placeholder {
-  color: #F0F0F0;
-}
-
-#mainContainer .input-div input:focus::-webkit-input-placeholder {
-  color: rgba(101, 31, 255, 0.1);
+  color: var(--input-color);
 }
 
 #mainContainer .input-div input:-moz-placeholder {
-    color: #F0F0F0;
-}
-
-#mainContainer .input-div input:-moz-placeholder {
-    color: rgba(101, 31, 255, 0.1);
+  color: var(--input-color);
 }
 
 #mainContainer .input-div input::-moz-placeholder {
-    color: #F0F0F0;
-}
-
-#mainContainer .input-div input::-moz-placeholder {
-    color: rgba(101, 31, 255, 0.1);
+  color: var(--input-color);
 }
 
 #mainContainer .input-div input:-ms-input-placeholder {
-    color: #F0F0F0;
-}
-
-#mainContainer .input-div input:-ms-input-placeholder {
-    color: rgba(101, 31, 255, 0.1);
+  color: var(--input-color);
 }
 
 #mainContainer .input-div input:focus {
-  color: #651FFF;
-  border-color: #651FFF;
+  color: #000;
+  border-color: #000;
 }
 
 .btn-group button {

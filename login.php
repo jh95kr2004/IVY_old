@@ -20,15 +20,51 @@
   <script src="js/consult.js"></script>
   <link rel="stylesheet" href="doc.css">
   <link rel="stylesheet" href="css/consult.css">
+  <link rel="stylesheet" href="css/login.css">
 </head>
 <body class='open-sans'>
   <nav class="navbar navbar-toggleable-md navbar-light">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="index.html">IVY</a>
+    <a class="navbar-brand" href="/">IVY</a>
   </nav>
   <div id='mainContainer' class='container'>
+    <div class='row'>
+      <div class='col'></div>
+      <div class='h3 col-12 col-md-5'>Sign In</div>
+      <div class='col'></div>
+    </div>
+    <div class='row'>
+      <div class='col'></div>
+      <div id='loginDescription' class='col-12 col-md-5'>Sign in to your pre-registered consulter account</div>
+      <div class='col'></div>
+    </div>
+    <div id='loginForm' class="form-group input-div">
+      <div class="row">
+        <div class='col'></div>
+        <div class="col-12 col-md-5">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" placeholder="johndoe@headstartai.com" id="email" required>
+        </div>
+        <div class='col'></div>
+      </div>
+      <div class="row">
+        <div class='col'></div>
+        <div class="col-12 col-md-5">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" placeholder="password" id="password" required>
+        </div>
+        <div class='col'></div>
+      </div>
+      <div class="row">
+        <div class='col'></div>
+        <div class='btn-group col-12 col-md-5'>
+  				<a href="#" id='continueButton' class="btn btn-primary btn-lg">CONTINUE</a>
+  			</div>
+        <div class='col'></div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

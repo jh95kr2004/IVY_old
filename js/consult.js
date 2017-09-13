@@ -26,6 +26,14 @@ $(function() {
     $(this).addClass("active");
   });
 
+  $(".form-control").focus(function() {
+    $(this).prev("label").css("color", "#000");
+  })
+
+  $(".form-control").focusout(function() {
+    if(!($(this).is(":valid"))) $(this).prev("label").css("color", "#CECECE");
+  })
+
   $(".btn-group button").not(".btn-toggle").click(function() {
     $(this).siblings().removeClass("active");
     $(this).addClass("active");
