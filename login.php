@@ -46,7 +46,7 @@
         <div class='col'></div>
         <div class="col-12 col-md-5">
           <label for="email">Email</label>
-          <input type="email" class="form-control" placeholder="johndoe@headstartai.com" id="email" required>
+          <input type="email" class="form-control" placeholder="Email" id="email" required>
         </div>
         <div class='col'></div>
       </div>
@@ -54,7 +54,7 @@
         <div class='col'></div>
         <div class="col-12 col-md-5">
           <label for="password">Password</label>
-          <input type="password" class="form-control" placeholder="password" id="password" required>
+          <input type="password" class="form-control" placeholder="Password" id="password" required>
         </div>
         <div class='col'></div>
       </div>

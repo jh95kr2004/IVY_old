@@ -69,4 +69,12 @@ $(function() {
   $(".btn-group button.btn-toggle").click(function() {
     $(this).toggleClass("active");
   })
+
+  $(".resultContainer tr").click(function() {
+    if($(this).hasClass("selected")) $(this).removeClass("selected");
+    else {
+      $(this).siblings().removeClass("selected");
+      $(this).addClass("selected");
+    }
+  })
 })

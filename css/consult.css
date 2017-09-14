@@ -17,25 +17,71 @@ nav button {
 }
 
 nav li.active a.nav-link {
-  color: #651FFF !important;
+  color: #000000 !important;
 }
 
 nav a.nav-link {
-  color: #000 !important;
+  color: #CECECE !important;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
 nav a.nav-link:hover {
-  color: #651FFF !important;
+  color: #000000 !important;
 }
 
 div.row {
   margin: 0;
 }
 
+input.search-input {
+  font-size: 1.3rem;
+}
+
+input.search-input:focus {
+  font-size: 1.3rem;
+  border-color: #000;
+}
+
+div.resultContainer {
+  margin-top: 1rem;
+  height: 25rem;
+  overflow-y: auto;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: .25rem;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+div.resultContainer table {
+  margin: 0;
+}
+
+div.resultContainer table tr:first-child td {
+  border-top: none;
+}
+
+div.resultContainer table tr.selected {
+  background-color: #CECECE;
+}
+
+div.button-group {
+  margin-top: 1rem;
+}
+
+div.button-group button {
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+#studentSearch {
+  display: inline;
+  position: absolute;
+  right: 15px;
+  width: 20rem;
+}
+
 #mainContainer {
   padding-top: 7rem;
+  margin-bottom: 1rem;
 }
 
 #mainContainer #leftMenu > div:first-child {
@@ -140,12 +186,11 @@ div.row {
   background-color: transparent;
 }
 
-.form-control {
-  padding: 0;
-  border: none;
-}
-
 @media screen and (max-width: 1199px) {
+  div#mainContainer {
+    padding-top: 2rem;
+  }
+
   .form-control {
     overflow-x: scroll;
   }
@@ -162,5 +207,18 @@ div.row {
     text-align: right;
     padding-left: inherit;
     padding-right: inherit;
+  }
+
+  #studentSearch {
+    display: block;
+    position: relative;
+    right: auto;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  div.button-group button {
+    font-size: 1rem;
+    padding: .5rem 1rem .5rem 1rem;
   }
 }

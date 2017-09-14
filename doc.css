@@ -33,3 +33,12 @@ nav a {
 .center-text {
 	text-align: center;
 }
+
+.btn-transparent {
+	background-color: transparent;
+	color: #CECECE;
+}
+
+.btn-transparent:hover {
+	color: #000000;
+}
