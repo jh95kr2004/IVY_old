@@ -1,4 +1,25 @@
 $(function() {
+  if($(window).width() < 1200) {
+    $("div#navbarSupportedContent").addClass("collapse");
+    $("div#navbarSupportedContent").addClass("navbar-collapse");
+    $("div#navbarSupportedContent > ul").removeClass("nav");
+    $("div#navbarSupportedContent > ul").addClass("navbar-nav");
+  }
+
+  $(window).resize(function() {
+    if($(window).width() < 1200) {
+      $("div#navbarSupportedContent").addClass("collapse");
+      $("div#navbarSupportedContent").addClass("navbar-collapse");
+      $("div#navbarSupportedContent > ul").removeClass("nav");
+      $("div#navbarSupportedContent > ul").addClass("navbar-nav");
+    } else {
+      $("div#navbarSupportedContent").removeClass("collapse");
+      $("div#navbarSupportedContent").removeClass("navbar-collapse");
+      $("div#navbarSupportedContent > ul").removeClass("navbar-nav");
+      $("div#navbarSupportedContent > ul").addClass("nav");
+    }
+  })
+
   $("#curricularButton").click(function() {
     $("#extra-curricularInput").css("display", "none");
     $("#backgroundInput").css("display", "none");
@@ -27,11 +48,17 @@ $(function() {
   });
 
   $(".form-control").focus(function() {
-    $(this).prev("label").css("color", "#000");
+    $(this).prev("label").animate({
+      "color": "#000000",
+    }, 100);
   })
 
   $(".form-control").focusout(function() {
-    if(!($(this).is(":valid"))) $(this).prev("label").css("color", "#CECECE");
+    if(!($(this).is(":valid"))) {
+      $(this).prev("label").animate({
+        "color": "#CECECE",
+      }, 100);
+    }
   })
 
   $(".btn-group button").not(".btn-toggle").click(function() {

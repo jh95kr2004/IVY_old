@@ -9,11 +9,15 @@
 
   <!-- ### Libraries ###
   - jQuery 3.2.1
-  - Bootstrap 4.0.0-alpha.6 -->
+  - jQuery UI 1.12.1
+  - Bootstrap 4.0.0
+  -->
   <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
   <!-- Javascript and CSS for this site -->
   <script src="doc.js"></script>
@@ -24,9 +28,6 @@
 </head>
 <body class='open-sans'>
   <nav class="navbar navbar-toggleable-md navbar-light">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
     <a class="navbar-brand" href="/">IVY</a>
   </nav>
   <div id='mainContainer' class='container'>
@@ -37,7 +38,7 @@
     </div>
     <div class='row'>
       <div class='col'></div>
-      <div id='loginDescription' class='col-12 col-md-5'>Sign in to your pre-registered consulter account</div>
+      <div id='loginDescription' class='col-12 col-md-5'>Sign in to your pre-registered consulter account.</div>
       <div class='col'></div>
     </div>
     <div id='loginForm' class="form-group input-div">

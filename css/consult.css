@@ -12,14 +12,18 @@ nav .navbar-brand {
   font-weight: bold;
 }
 
+nav button {
+  display: none;
+}
+
 nav li.active a.nav-link {
   color: #651FFF !important;
 }
 
 nav a.nav-link {
   color: #000 !important;
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 nav a.nav-link:hover {
@@ -74,7 +78,7 @@ div.row {
 }
 
 #mainContainer .input-div input {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.7rem;
   font-size: 1.5rem;
   font-weight: 300;
   border: none;
@@ -148,5 +152,15 @@ div.row {
 
   .form-control * {
     overflow-x: visible;
+  }
+
+  nav button {
+    display: inherit;
+  }
+
+  nav a.nav-link {
+    text-align: right;
+    padding-left: inherit;
+    padding-right: inherit;
   }
 }
